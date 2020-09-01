@@ -15,7 +15,7 @@
                     var palavra = $("input[name=nomes]").val();
 
                     if(palavra != ""){
-                        $.get("php/observador.php", {"palavra": palavra}, function(mensagem){
+                        $.get("php/valores.php", {"palavra": palavra}, function(mensagem){
                             if(mensagem == 'true'){
                                 $("#span").css("color", "red");
                                 $("#span").html("Fruta já cadastrada!");

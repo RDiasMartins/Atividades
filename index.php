@@ -34,6 +34,11 @@
                     <td>2020.08.19</td>
                     <td> <a href="2020.08.19/index.php"> Engenharia Reversa </a> </td>
                 </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2020.08.26</td>
+                    <td> <a href="2020.08.26/index.php"> Engenharia Reversa - Grupo </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
