@@ -13,6 +13,7 @@
 					 	$("#bairro").val(valores.bairro);
 					 	$("#localidade").val(valores.localidade);
 					 	$("#uf").val(valores.uf);
+					 	$("#numero").focus();
 					});
 
 
@@ -41,6 +42,7 @@
 				<hr> <br/>
 
 				<input type = "text" name = "logradouro" id = "logradouro" placeholder = "Endereço"/>
+				<input type = "text" name = "numero" id = "numero" placeholder = "Número"/>
 				<input type = "text" name = "bairro" id = "bairro" placeholder = "Bairro"/>
 				<input type = "text" name = "localidade" id = "localidade" placeholder = "Cidade"/>
 				<input type = "text" name = "uf" id = "uf" placeholder = "Estado"/>
