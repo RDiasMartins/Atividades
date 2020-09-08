@@ -7,8 +7,7 @@
         <script>
 
             $(document).ready(function(){
-                $("input[name='nome']").blur(function(){
-
+                function func(){
                     $.getJSON("https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking/?decada="+$("input[name='ano']").val(), function(valores){
 
                         $("#nomes").html("<tr><th width='auto' height ='20px'>Posição</th><th width='auto' height ='20px'>Nome</th><th id='muda' width='100px' height ='20px'>Idade</th></tr><tr><td id='some' colspan='3' >Preencha o nome e o ano para verificar se este nome está entre os 20 mais frequentes da década.</td></tr>");
@@ -25,25 +24,13 @@
                             });
 
                     });
+                }
+
+                $("input[name='nome']").blur(function(){
+                    func();
                 });
                 $("input[name='ano']").change(function(){
-
-                    $.getJSON("https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking/?decada="+$("input[name='ano']").val(), function(valores){
-
-                        $("#nomes").html("<tr><th width='auto' height ='20px'>Posição</th><th width='auto' height ='20px'>Nome</th><th id='muda' width='100px' height ='20px'>Idade</th></tr><tr><td id='some' colspan='3' >Preencha o nome e o ano para verificar se este nome está entre os 20 mais frequentes da década.</td></tr>");
-                        $("#some").hide();
-                        $("#muda").html("Frequência");
-
-                            $.each(valores[0].res, function(indice, valor){
-                                $("#nomes").html($("#nomes").html()+"<tr> <td>"+valor.ranking+"</td> <td id='achou_nome"+indice+"'>"+valor.nome+"</td> <td>"+valor.frequencia+"</td> </tr>");
-
-                                if(valor.nome.toUpperCase()==$("input[name='nome']").val().toUpperCase()){
-                                    $("#achou_nome"+indice).css('color', 'green');
-                                }
-                                
-                            });
-
-                    });
+                    func();
                 });
             });
 
