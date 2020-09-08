@@ -39,6 +39,16 @@
                     <td>2020.08.26</td>
                     <td> <a href="2020.08.26/index.php"> Engenharia Reversa - Grupo </a> </td>
                 </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2020.09.06</td>
+                    <td> <a href="2020.09.06/index.php">  Trabalho Bimestral - Dupla </a> </td>
+                </tr>
+                tr>
+                    <td>4</td>
+                    <td>2020.09.16</td>
+                    <td> <a href="2020.09.16/index.php">  Consulta CEP - JSon </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
