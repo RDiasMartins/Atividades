@@ -46,7 +46,7 @@
 
     <body>
         <input type="text" name="nome" placeholder="Nome..."></input> 
-        <input type="number" name="ano" placeholder="Ano..." step="10" value=1930></input> <br><br>
+        <input type="number" name="ano" min="1930" max="2010" placeholder="Ano..." step="10" value=1930></input> <br><br>
         <table id="nomes">
             <tr>
                 <th width="auto" height ="20px">Posição</th>
