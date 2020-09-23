@@ -44,10 +44,15 @@
                     <td>2020.09.06</td>
                     <td> <a href="2020.09.06/index.php">  Trabalho Bimestral - Dupla </a> </td>
                 </tr>
-                tr>
+                <tr>
                     <td>4</td>
                     <td>2020.09.16</td>
                     <td> <a href="2020.09.16/index.php">  Consulta CEP - JSon </a> </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2020.09.23</td>
+                    <td> <a href="2020.09.23/">  DB - Taxonomia </a> </td>
                 </tr>
             </tbody>
 </body>
