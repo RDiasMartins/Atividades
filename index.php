@@ -59,6 +59,11 @@
                     <td>2020.09.30</td>
                     <td> <a href="2020.09.30/">  DB - Taxonomia Filtro </a> </td>
                 </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2020.10.14</td>
+                    <td> <a href="2020.10.14/">  DB - Taxonomia Listagem/Cadastro </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
