@@ -52,17 +52,22 @@
                 <tr>
                     <td>5</td>
                     <td>2020.09.23</td>
-                    <td> <a href="2020.09.23/">  DB - Taxonomia </a> </td>
+                    <td> <a href="2020.09.23/index.php">  DB - Taxonomia </a> </td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td>2020.09.30</td>
-                    <td> <a href="2020.09.30/">  DB - Taxonomia Filtro </a> </td>
+                    <td> <a href="2020.09.30/index.php">  DB - Taxonomia Filtro </a> </td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td>2020.10.14</td>
-                    <td> <a href="2020.10.14/">  DB - Taxonomia Listagem/Cadastro </a> </td>
+                    <td> <a href="2020.10.14/index.php">  DB - Taxonomia Listagem/Cadastro </a> </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>2020.10.23</td>
+                    <td> <a href="2020.10.23/index.php">  DB - MusicPlayer Listagem/Cadastro </a> </td>
                 </tr>
             </tbody>
 </body>

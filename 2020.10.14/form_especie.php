@@ -20,7 +20,7 @@
                     $("select[name='familia']").change(function(){
                         familia = $("select[name='familia']").val();
                         
-                        texto = "<select name='s_genero' id='s_genero'><option value=''> ::SELECIONE UM GENERO:: </option>";
+                        texto = "<select required name='s_genero' id='s_genero'><option value=''> ::SELECIONE UM GENERO:: </option>";
                         $("select[name='s_genero']" ).prop( "disabled", false );
                         $.post("seleciona_genero.php",{'familia':familia},function(resultado){                   
                             $.each(resultado, function(indice, valor){
@@ -29,9 +29,7 @@
 
                                 $("#genero").html(texto);
                             });                                             
-                        });
-                        
-                       
+                        });                    
                     });    
                 });
         </script>
@@ -49,7 +47,7 @@
                     if(empty($_POST)){
                         echo'
                             <form method = "POST" name="cadastro_genero">
-                                <select name = "familia">
+                                <select required  name = "familia">
                                     <option value =""> ::SELECIONE UMA FAM&Iacute;LIA::</option>
                             ';
                             while($linhaFamilia = mysqli_fetch_assoc($resultadoFamilia)){
@@ -60,16 +58,16 @@
                                 <br/><br/>
 
                                 <div id="genero">
-                                    <select name="s_genero" id="s_genero" disabled>
+                                    <select required name="s_genero" id="s_genero" disabled>
                                         <option value=""> ::SELECIONE UM GENERO:: </option>       
                                     </select>
                                 </div>
 
                                 <br/>
 
-                                <input type="text" name="nome" placeholder =  "Nome..."/>
+                                <input type="text" required name="nome" placeholder =  "Nome..."/>
                                 <br/><br/>
-                                <input type="text" name="nome_cientifico" placeholder =  "Nome cientif&iacute;co..."/>
+                                <input type="text" required name="nome_cientifico" placeholder =  "Nome cientif&iacute;co..."/>
                                 <br/><br/>
                                 <input type="submit" value="Cadastrar"/>
                             </form>

@@ -1,16 +1,16 @@
 <?php
     include "conexao.php";
 
-    $selectFamilia = "SELECT nome, id_familia FROM familia";
+    $selectGenero = "SELECT nome, id_genero FROM genero";
 
-    $resultadoFamilia = mysqli_query($conexao,$selectFamilia);
+    $resultadoGenero = mysqli_query($conexao,$selectGenero);
 
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <meta charset="ISO-8859">
-        <title> Tabela g&ecircnero - Cadastro </title>
+        <title> Tabela banda - Cadastro </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="estilo.min.css" />
@@ -23,36 +23,36 @@
 
             <center>
             <div class="form-generico col-sm-6">
-                <h4 style="color:black; font-family:Consolas;"> CADASTRAR G&EcircNERO: </h3> 
+                <h4 style="color:black; font-family:Consolas;"> CADASTRAR BANDA: </h3> 
                 
                 <?php
                     if(empty($_POST)){
                         echo'
                             <form method = "POST" name="cadastro_genero">
-                                <select required name = "familia">
-                                    <option value =""> ::SELECIONE UMA FAM&Iacute;LIA::</option>
+                                <select required name = "genero">
+                                    <option value =""> ::SELECIONE UM G&Ecirc;NERO::</option>
                             ';
-                            while($linhaFamilia = mysqli_fetch_assoc($resultadoFamilia)){
-                                echo '<option value='.$linhaFamilia["id_familia"].'> '.$linhaFamilia["nome"].'</option>';
+                            while($linhaGenero = mysqli_fetch_assoc($resultadoGenero)){
+                                echo '<option value='.$linhaGenero["id_genero"].'> '.$linhaGenero["nome"].'</option>';
                             }
                         echo'
                                 </select>
                                 <br/><br/>
-                                <input type="text" name="nome_cientifico" required placeholder =  "Nome cientif&iacute;co..."/>
+                                <input type="text" name="nome_banda" required placeholder =  "Nome banda..."/>
                                 <input type="submit" value="Cadastrar"/>
                             </form>
                         ';
                     }else{
                         include "conexao.php";
 
-                        $nome_cientifico = $_POST["nome_cientifico"];
-                        $cod_familia = $_POST["familia"];
+                        $nome = $_POST["nome_banda"];
+                        $cod_genero = $_POST["genero"];
 
-                        $query = "INSERT into genero(nome_cientifico, cod_familia) values('$nome_cientifico','$cod_familia')";
+                        $query = "INSERT into banda(nome, cod_genero) values('$nome','$cod_genero')";
 
                         mysqli_query($conexao, $query) or die($query);
 
-                        echo'<p style="color:black; font-family:Consolas;"> G&EcircNERO CADASTRADO! </p>';
+                        echo'<p style="color:black; font-family:Consolas;"> BANDA CADASTRADA! </p>';
                     }        
                 ?>
             </div>
