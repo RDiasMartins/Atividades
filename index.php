@@ -69,6 +69,11 @@
                     <td>2020.10.23</td>
                     <td> <a href="2020.10.23/index.php">  DB - MusicPlayer Listagem/Cadastro </a> </td>
                 </tr>
+                <tr>
+                    <td>9</td>
+                    <td>2020.11.04</td>
+                    <td> <a href="2020.11.04/index.php">  Revisão - 1°/2° Bimestre </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
