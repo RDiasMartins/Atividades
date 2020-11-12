@@ -16,7 +16,11 @@
     $resultado = mysqli_query($conexao, $select) or die(mysqli_error($conexao));
     while($linha = mysqli_fetch_assoc($resultado)){
         $nome = $linha["nome"];
-        echo "<td>$nome</td>";
+        echo "
+            <tr>
+                <td>$nome</td>
+            </tr>
+        ";
     }
     echo "</table>";
 

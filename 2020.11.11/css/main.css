@@ -1,0 +1,46 @@
+footer {
+    position: fixed;
+    height: 50px;
+    background-color:#fafaf0;
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    bottom: 0;
+    width: 100%;
+}
+div{
+    padding:10px;
+}
+
+a:link {
+    color: white;
+    font-weight:bold;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+    font-weight:bold;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black;
+    font-weight:bold;
+  }
+
+  a.menu:hover {
+    color: black;
+    font-weight:bold;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+    font-weight:bold;
+  }
+
+  li{
+    color: black;
+      margin-left:20px;
+  }

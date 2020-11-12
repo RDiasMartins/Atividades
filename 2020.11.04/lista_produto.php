@@ -19,8 +19,10 @@
         $nome = $linha["nome"];
         $descricao = $linha["descricao"];
         echo "
-            <td>$nome</td>
-            <td>$descricao</td>
+            <tr>
+                <td>$nome</td>
+                <td>$descricao</td>
+            </tr>
         ";
     }
     echo "</table>";
