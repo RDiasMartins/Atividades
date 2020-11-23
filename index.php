@@ -79,6 +79,11 @@
                     <td>2020.11.11</td>
                     <td> <a href="2020.11.11/index.php">  Revisão - 1°/2° Bimestre + Delete </a> </td>
                 </tr>
+				<tr>
+                    <td>10</td>
+                    <td>2020.11.30</td>
+                    <td> <a href="2020.11.30/index.php">  Revisão - 1°/2° Bimestre + Delete + Update </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>

@@ -3,7 +3,6 @@
 <?php
     include "conf.php";
     include "conexao.php";
-    include "script_remover_loja.php";
     cabecalho();
 
     echo '<br/> 
@@ -26,12 +25,19 @@
             <tr>
                 <td>$nome</td>
                 <td>
-                    <button class = 'btn-sm btn-danger remover' value='$loja'>Remover</button>
+                    <button class='alterar_loja' value='$loja' data-toggle='modal' data-target='#modal'>✏️</button>
+                    <button class='remover_loja' value='$loja'>X</button>
                 </td>
             </tr>
         ";
     }
     echo "</table>";
+
+    $titulo = "Alterar loja";
+    $formulario = "alterar_loja.php";
+    include "modal.php";
+        
+    include "scripts_loja.php";    
 
     rodape();
 ?>

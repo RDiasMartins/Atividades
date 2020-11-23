@@ -3,7 +3,7 @@
 <?php
     include "conf.php";
     include "conexao.php";
-    include "script_remover_loja.php";
+
     cabecalho();
 
     echo '<br/> 
@@ -12,26 +12,39 @@
             <thead class="thead-dark">
                 <tr>
                     <th>Nome</th>
+                    <th>Descrição</th>
                     <th>Ação</th>
                 </tr>
             </thead>
         ';
 
-    $select = "SELECT * FROM loja ORDER BY nome";
+    $select = "SELECT * FROM produto ORDER BY nome";
+   
     $resultado = mysqli_query($conexao, $select) or die(mysqli_error($conexao));
+    
     while($linha = mysqli_fetch_assoc($resultado)){
         $nome = $linha["nome"];
-        $loja = $linha["id_loja"];
+        $descricao = $linha["descricao"];
+        $produto = $linha["id_produto"];
+
         echo "
             <tr>
                 <td>$nome</td>
-                <td>
-                    <button class = 'btn-sm btn-danger remover' value='$loja'>Remover</button>
+                <td>$descricao</td>
+                <td> 
+                    <button class='alterar_produto' value='$produto' data-toggle='modal' data-target='#modal'>✏️</button> 
+                    <button class = 'remover_produto' value='$produto'>ˣ</button>      
                 </td>
             </tr>
         ";
     }
     echo "</table>";
+
+    $titulo = "Alterar produto";
+    $formulario = "alterar_produto.php";
+    include "modal.php";
+        
+    include "scripts_produto.php"; 
 
     rodape();
 ?>
