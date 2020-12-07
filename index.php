@@ -84,6 +84,11 @@
                     <td>2020.11.30</td>
                     <td> <a href="2020.11.30/index.php">  Revisão - 1°/2° Bimestre + Delete + Update </a> </td>
                 </tr>
+                <tr>
+                    <td>11</td>
+                    <td>2020.12.01</td>
+                    <td> <a href="2020.12.01/index.php">  Autenticação de usuário </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
