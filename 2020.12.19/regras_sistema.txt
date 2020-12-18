@@ -1,0 +1,14 @@
+Convidado: (sem permissao - sem variavel de sessao)
+    - Se cadastrar
+    - Logar
+
+Usuário comúm logado:
+    (Com permissão 1)
+    - Habilitado todas as funções de cadastro
+	- Habilitado todas as funções de listagem
+
+Admin:
+    (Com permissão 2 pré setada no banco de dados)
+    - Habilitado todas as funções de cadastro
+	- Habilitado todas as funções de listagem
+	- Habilitado ambas funções de ação na listagem (Alterar dados ou excluir dados).

@@ -89,6 +89,11 @@
                     <td>2020.12.01</td>
                     <td> <a href="2020.12.01/index.php">  Autenticação de usuário </a> </td>
                 </tr>
+                <tr>
+                    <td>12</td>
+                    <td>2020.12.19</td>
+                    <td> <a href="2020.12.19/index.php">  Trabalho Bimestral - 3° Bimestre </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
