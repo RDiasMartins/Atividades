@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset='utf-8' />
+            <script src='jquery-3.5.1.min.js'></script>
+            <title>Exercicio 1 - Acessibilidade</title>
+            <script>
+                $(document).ready(function(){
+                    $("#fonte").click(function(){
+                        if($(this).val()==0){
+                            $("body").css("font-size","1.5em");
+                            $(this).val(1);
+                        }
+                        else{
+                            $("body").css("font-size","1em");
+                            $(this).val(0);
+                        }
+                    });
+                    $("#contraste").click(function(){
+                        if($(this).val()==0){
+                            $("body").css("background-color","black");
+                            $("p, h1, h2, li, fieldset").css("color", "yellow");
+                            $(this).val(1);
+                            $("#l3").val(0);
+                        }
+                        else{
+                            $("body").css("background-color","white");
+                            $("p, h1, h2, li, fieldset").css("color", "black");
+                            $(this).val(0);
+                        }
+                    });               
+                });
+            </script>
+        </head>
+        <body>
+            <header>   
+				<fieldset>				
+					<h2>Acessibilidade</h2>
+
+					<ul>
+						<li id="fonte">Aumento da fonte</li>
+						<li id="contraste">Alto contraste</li>
+					</ul>
+				</fieldset>
+            </header>
+		
+			<h1 style="text-align:justify;">Acessibilidade na Web?</h1>
+			<p style="text-align:justify;">
+				"Acessibilidade na web significa que pessoas com deficiência podem usar a web. 
+				Mais especificamente, a acessibilidade na web significa que pessoas com deficiência podem perceber, entender, navegar, interagir e contribuir para a web. 
+				E mais. Ela também beneficia outras pessoas, incluindo pessoas idosas com capacidades em mudança devido ao envelhecimento.”
+			</p>
+			
+			<h1 style="text-align:justify;" >Qual a importância de deixar um site acessível?</h1>
+			<p style="text-align:justify;">
+				As pessoas estão se sentido cada vez mais confortáveis para realizar todo tipo de atividade no mundo virtual. 
+				Por isso, muito mais do que ter um design bonito e atraente, os sites precisam atender a todos. 
+				Quando uma página não está acessível, ela está fechando as portas para milhões de pessoas, indo contra o seu propósito – que é atrair mais visitantes.
+				Ou seja, não pensar em acessibilidade pode ser sinônimo de deixar dinheiro em cima da mesa. 
+				Vale reforçar que hoje em dia já existem recursos que permitem criar sites bonitos, funcionais e acessíveis ao mesmo tempo. 
+				Além do mais, a acessibilidade pode melhorar o seu rankeamento da sua página no Google, 
+				uma vez que o algoritmo do buscador reconhece essas práticas e o enxerga com maior relevância.
+				Tendo isso em vista, desde 2016 a Lei Brasileira de inclusão (LBI) exige que todos os sites, públicos e privados, estejam acessíveis. 
+				Mas infelizmente apenas 1% deles seguem essa regra no Brasil. Diante disso, ter um site acessível não é só cumprir a lei, é ter um diferencial competitivo. 
+				E as organizações que saíram na frente nesse movimento já tem sido reconhecidas. A Prefeitura de São Paulo, por exemplo, 
+				lançou o seu Selo de Acessibilidade Digital justamente com esse propósito e já tem ratificado sites de empresas de todo o Brasil, como a Samsung.
+			</p>
+        </body>
+    </html>
