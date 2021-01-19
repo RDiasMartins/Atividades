@@ -94,6 +94,16 @@
                     <td>2020.12.19</td>
                     <td> <a href="2020.12.19/index.php">  Trabalho Bimestral - 3° Bimestre </a> </td>
                 </tr>
+                <tr>
+                    <td>13</td>
+                    <td>2021.01.13</td>
+                    <td> <a href="2021.01.13/index.php">  Acessibilidade na WEB </a> </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>2021.01.20</td>
+                    <td> <a href="2021.01.20/index.php">  Cookies e autenticação </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
