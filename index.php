@@ -104,6 +104,11 @@
                     <td>2021.01.20</td>
                     <td> <a href="2021.01.20/index.php">  Cookies e autenticação </a> </td>
                 </tr>
+				<tr>
+                    <td>15</td>
+                    <td>2021.02.03</td>
+                    <td> <a href="2021.02.03/index.php">  Exclusão de cookies </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
