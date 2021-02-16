@@ -109,6 +109,16 @@
                     <td>2021.02.03</td>
                     <td> <a href="2021.02.03/index.php">  Exclusão de cookies </a> </td>
                 </tr>
+				<tr>
+                    <td>16</td>
+                    <td>2021.02.10</td>
+                    <td> <a href="2021.02.10/index.html">  Local Storage  </a> </td>
+                </tr>
+				<tr>
+                    <td>16</td>
+                    <td>2021.02.17</td>
+                    <td> <a href="2021.02.17/index.php">  Projeto prático - 4° Bimestre  </a> </td>
+                </tr>
             </tbody>
 </body>
 </html>
